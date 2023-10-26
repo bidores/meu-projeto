@@ -1,0 +1,210 @@
+<!DOCTYPE html> <!--tipo de documento, informa o navegador que é do tipo HTML-->
+<html lang="pt-br"> <!--qual a língua-->
+<head> <!--cabeça ou cabeçalho, informações gerais, metadados -->
+    <title>Meu Portifólio</title> <!--nome do site-->
+    <meta charset="UTF-8"> <!-- como o site deve ser reindenizado, "como quer que o navegador o leia, o mais padrão é este-->
+    
+    <link rel="stylesheet" type="text/css" href="style.css"> <!--linkar o index.HTML ao style css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!--imporação e link com os ícones/href é Referencia de Hipertexto-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body> <!-- corpo do site -->
+ <header> <!--cabeçalho do corpo da página-->
+   <nav> <!--menu de naveção-->
+      <ul id= "menuNavegacao"> <!--lista não ordenada com pontos/id linka com style.css--> 
+        <li>
+          <a href= "#formacao"> <!-- link que direcionam para outras páginas HTML dentro das aplicações. ancora é um ID,único-->
+           Formação 
+          </a>
+       </li>
+       <li>
+         <a href= "#atuacao"> <!-- link que direcionam para outras páginas HTML dentro das aplicações-->
+          Atuação 
+         </a>
+       </li>
+       <li>
+          <a href= "#meusprojetos">
+          Meus Projetos
+          </a>
+       </li>
+       <li>
+         <a href= "#contato"> <!-- link que direcionam para outras páginas HTML dentro das aplicações-->
+            Contato
+         </a>
+       </li>    
+     </ul>
+   </nav>
+ </header>
+ 
+ <main> <!--define o conteúdo principal dentro do body, isso não aparece na apresentação-->
+   <section class="sub-section"> <!-- seção ou parte temática do documento, bom para deslocamento e alinhamento de elementos -->
+     <article class="article-cont"> <!--unidades completas de conteúdo, blog, noticias, artigos, comentários,.../class= linka com _ style.css-->
+       <figure> <!-- tag semantiga para imagem-->
+            <img class="foto-perfil" src="./img/1.jpeg" alt="Foto perfil"> <!-- class= conecta com o style.css/ src= conecta uma img que esta em uma pasta/ alt= para leitura alternativa de acessibilidade-->
+        </figure> 
+       <div class="sub-section"> <!--coteiner genérico (agrupador de elementos) para conteúdo de fluxo(como por exemplo, um h1 e um h2)-->
+         <h1>
+            Gabriella das Dores
+         </h1> <!--título 1-->
+         <h2> 
+            estudante e trabalhadora
+          </h2> <!--título 2-->
+       </div>
+        <p class="subparagrafo">
+         Olá, mundo! Me chamo Gabriella das Dores, sou paulista, tenho 24 anos, estudante de Cinema e Audiovisual na UFRB, 
+         atuando em diversas as áreas do Audiovisual, sendo meus principais interesses são fotografia, montagem e som. 
+         Estuda programação e tecnologia, buscando interatividade narrativa e uma relação mais saúdavel e responsiva 
+         com o mundo da tecnologia, para todes. 
+       </p> <!--paragrafo-->
+     </article>
+   </section> 
+
+   <div class="sub-section2"> <!--não é possivel usar um id, pois ele tem um espaço delimitado, div=coteiner genérico (agrupador de elementos) para conteúdo de fluxo(como por exemplo, um h3, p, h4)facilitar --> <!--class seletor reutilizavel, a sintaxe é .(ponto)-->
+     <section class="sub-section2" id="formacao"> <!--ponto de ancoragem dentro deo menuNavegação, linka pelo HREF--> <!-- seção ou parte temática do documento, bom para deslocamento e alinhamento de elementos --> <!--id seletor único, a sintaxe é #-->
+        <h3>Formação</h3>
+       <ul> <!--lista não ordenada com pontos/id linka com style.css--> 
+          <li> <!--item da lista-->
+            <h4> Cinema e Audiovisual</h4>
+            <a href="https://www.ufrb.edu.br/cahl/cursos/cinema-e-audiovisual" target="_blank"><small>UFRB - Universidade Federal do Recôncavo da Bahia</small></a>
+            <p class="subparagrafo">
+             Morando atualmente na Bahia, na cidade de Cachoeira, iniciando em 2022. 
+             Realizou assistencia de produção no curta-metragem <i>Felipa</i> (2023) Dirigido por Ana Clara Pereira. 
+             Esta no grupo de pesquisa e extensão Em Fronteiras, onde realizou em 2023 a mostra Encruzilhada,
+             no núcleo de Curadoria. 
+            </p>
+          </li>
+          <li>
+           <h4>Audiovisual</h4>
+           <a href="https://www.sp.senac.br/graduacao/bacharelado-em-audiovisual" target="_blank"><small>Centro Universitario Senac Santo Amaro</small></a>
+           <p class="subparagrafo">
+             Íniciou o curso em 2019, realizando o curta <i>Ouvir</i> (2019), nas funções de direção de arte, 
+             efeitos especiais de som e o makingoff. Pode elaborar projetos e roteiros colaborativamente. 
+             Interrompido por um ano, por conta da pandemia de COVID-19, e retornando em 2021 no formato EAD, 
+             pede 2022 transferencia para UFRB no ano seguinte 
+           </p>
+          </li>
+          <li>
+            <h4>Profissionalizante em Teatro</h4>
+            <a href="https://macunaima.com.br/?gclid=CjwKCAjws9ipBhB1EiwAccEi1H5XmgSKoNsbds2SG_y7zgH5wP92NVksF53QnYHgJi3qysSMHDFEwBoClDMQAvD_BwE" target="_blank"><small>Teatro Macunaíma</small></a>
+            <p class="subparagrafo">
+              Íniciou o curso em 2015, realizou montagens como <i>Yerma</i>, Federico García Lorca
+              <i>A Gaivota</i>, Anton Tchekhov e a montagem <i>Dialogos Surdos</i> adaptação de duas obras
+             de Grace Passô, <i>Por Elise</i> e <i>Amores Surdos</i> que me fez aproximar 
+             cada vez mais do Cinema brasileiro. 
+            </p>
+        </li>
+        <li>
+          <h4>Inglês Britânico</h4>
+          <a href="https://www.culturainglesa.com.br/unidade/granja-viana/" target="_blank"><small>Cultura Inglesa - Granja Viana</small></a>
+          <p class="subparagrafo">
+            Cursou por seis anos, se considerando nível intermediario,
+            tilizando de maneira ativa em seus estudos na universidade. 
+          </p>
+        </li>
+       </ul>
+      </section>
+   </div>
+   <div class="sub-section2">
+     <section id="atuacao"> <!--ponto de ancoragem dentro deo menuNavegação, linka pelo HREF--> <!-- seção ou parte temática do documento, bom para deslocamento e alinhamento de elementos --> <!--id seletor único, a sintaxe é #-->
+       <h3> 
+         Atuação 
+       </h3>
+
+       
+       <ul>
+         <li>
+           <h4> Notas de Caminhada - Super 8</h4>
+           <a href="https://www.mostralivre.com/19/" target="_blank"><small> Mostra do Filme Livre</small></a>
+           <p class="subparagrafo">
+             Curta produzido dentro de uma Oficina realizada na Mostra do Filme Livre 2019, 
+            a proposta consistia em realizar um filme de tomada única em super 8 e realizamos 
+            intervenções na película, durante 3 dias e editado durante a filmagem. Curta-metragem 
+            selecionado para <a href="https://www.instagram.com/festivalsuperoff/" target="_blank">Mostra Super Off de 2019</a>. 
+            Realização: Gabriella Peixoto, Eveline Araujo, Felipe Solino, Lets Go, Stefano Murillo Reyes
+           </p>
+         </li>
+         <li>
+           <h4>Curadoria</h4>
+           <a href="https://cinetornadofestival.wixsite.com/cinema" target="_blank"><small>Cine Festival Tornado 2019</small></a>
+           <p class="subparagrafo">
+             Avaliando e classificando filmes nos formatos curta-metragem e longas metragens
+             ficcionais, documentais e experimentais, enviados de varias partes do mundo, 
+             sobretudo brasieiros, de diversas regiões do país. 
+           </p>
+         </li>
+         <li>
+           <h4> Ajudante de Assistência de Direção</h4>
+           <h5><small>Longa-metragem Malês</small></h5>
+           <p class="subparagrafo">
+              Colaborou na assistência de direção por vinte dias, 
+              acompanhando o elenco nos ensaios e sets. 
+            </p>
+        </li>
+        <li>
+          <h4>Nihon Subaru</h4>
+          <a href="https://www.nihonespecializadasubaru.com" target="_blank"><small>Consultora - 2016 á 2022</small></a> 
+          <p class="subparagrafo"> 
+            Atuou por seis anos, entre 2016 e 2022, onde geriu a comunicação com clientes e fornecedores. 
+            Elaborando orçamentos e propostas para fornecedores. Prestava consultoria aos clientes, 
+            elaborando dentro do custo e beneficio as revisões programadas e manutenções periódicas.  
+          </p>
+        </li>
+      </ul>      
+     </section>
+    </div>
+   <section id="meusprojetos">
+     <h3> Meus Projetos</h3> 
+
+     <ul> 
+       <li> 
+         <h4>Calculadora</h4> 
+         <small>Projeto em Java Script</small><br /> <!--osmall não se comporta como link, ele pega o texto do conteúdo, precisa de br, não se comporta em bloco-->
+         <a href="https://pretalab.com" target="_blank">
+          Link para o projeto 
+         </a>
+          <p class="subparagrafo">
+            Projeto desenvolvido durante o Ciclo Formativo Básico,
+            da Pretalab com a finalidade de aprimorar os conhecimentos
+            em ferramentas de desenvolvimento Web - HTML e CSS.
+          </p>
+        </li>    
+        <li>
+         <h4>Projeto página e-commerce</h4> 
+         <small>Projeto em HTML e CSS</small><br /> <!--osmall não se comporta como link, ele pega o texto do conteúdo, precisa de br, não se comporta em bloco-->
+         <a href="https://pretalab.com" target="_blank">
+          Link para o projeto 
+         </a>
+         <p class="subparagrafo">
+           Projeto desenvolvido durante o Ciclo Formativo Básico,
+           da Pretalab com a finalidade de aprimorar os conhecimentos
+           em ferramentas de desenvolvimento Web - HTML e CSS.
+          </p>
+       </li>
+      </ul>
+   </section>
+ </main>
+
+ <footer>
+      <ol id="contato">
+          <li>
+             <i class="fa-brands fa-youtube"></i> 
+             <a href="https://www.youtube.com/channel/UCy3vWeQwMOJ4IlwpSWlrkag" target="_blank">Bidores</a>
+          </li>
+          <li>
+             <i class="fab fa-linkedin"></i>
+             <a href="https://www.linkedin.com/in/gabriella-peixoto-das-dores-25275a196/" target="_blank">gabriella-peixoto-das-dores</a>
+          </li>
+          <li>
+             <i class="fas fa-envelope-square" target="_blank"></i>bidores.cine@gmail.com
+          </li>
+          <li>
+            <i class="fab fa-github-square"></i>
+              <a href="https://github.com/bidores" target="_blank">bidores</a>
+          </li>
+      </ol>
+ </footer>
+
+</body>
+</html>
