@@ -39,12 +39,12 @@
  </header>
  
  <main> <!--define o conteúdo principal dentro do body, isso não aparece na apresentação-->
-   <section class="sub-section"> <!-- seção ou parte temática do documento, bom para deslocamento e alinhamento de elementos -->
+   <section> <!-- seção ou parte temática do documento, bom para deslocamento e alinhamento de elementos -->
      <article class="article-cont"> <!--unidades completas de conteúdo, blog, noticias, artigos, comentários,.../class= linka com _ style.css-->
        <figure> <!-- tag semantiga para imagem-->
             <img class="foto-perfil" src="./img/1.jpeg" alt="Foto perfil"> <!-- class= conecta com o style.css/ src= conecta uma img que esta em uma pasta/ alt= para leitura alternativa de acessibilidade-->
         </figure> 
-       <div class="sub-section"> <!--coteiner genérico (agrupador de elementos) para conteúdo de fluxo(como por exemplo, um h1 e um h2)-->
+       <div > <!--coteiner genérico (agrupador de elementos) para conteúdo de fluxo(como por exemplo, um h1 e um h2)-->
          <h1>
             Gabriella das Dores
          </h1> <!--título 1-->
@@ -61,8 +61,8 @@
      </article>
    </section> 
 
-   <div class="sub-section2"> <!--não é possivel usar um id, pois ele tem um espaço delimitado, div=coteiner genérico (agrupador de elementos) para conteúdo de fluxo(como por exemplo, um h3, p, h4)facilitar --> <!--class seletor reutilizavel, a sintaxe é .(ponto)-->
-     <section class="sub-section2" id="formacao"> <!--ponto de ancoragem dentro deo menuNavegação, linka pelo HREF--> <!-- seção ou parte temática do documento, bom para deslocamento e alinhamento de elementos --> <!--id seletor único, a sintaxe é #-->
+   <div class="sub-section"> <!--não é possivel usar um id, pois ele tem um espaço delimitado, div=coteiner genérico (agrupador de elementos) para conteúdo de fluxo(como por exemplo, um h3, p, h4)facilitar --> <!--class seletor reutilizavel, a sintaxe é .(ponto)-->
+     <section id="formacao"> <!--ponto de ancoragem dentro deo menuNavegação, linka pelo HREF--> <!-- seção ou parte temática do documento, bom para deslocamento e alinhamento de elementos --> <!--id seletor único, a sintaxe é #-->
         <h3>Formação</h3>
        <ul> <!--lista não ordenada com pontos/id linka com style.css--> 
           <li> <!--item da lista-->
@@ -106,7 +106,7 @@
        </ul>
       </section>
    </div>
-   <div class="sub-section2">
+   <div class="sub-section">
      <section id="atuacao"> <!--ponto de ancoragem dentro deo menuNavegação, linka pelo HREF--> <!-- seção ou parte temática do documento, bom para deslocamento e alinhamento de elementos --> <!--id seletor único, a sintaxe é #-->
        <h3> 
          Atuação 
@@ -126,7 +126,7 @@
            </p>
          </li>
          <li>
-           <h4>Curadoria</h4>
+           <h4><b>Curadoria</b></h4>
            <a href="https://cinetornadofestival.wixsite.com/cinema" target="_blank"><small>Cine Festival Tornado 2019</small></a>
            <p class="subparagrafo">
              Avaliando e classificando filmes nos formatos curta-metragem e longas metragens
@@ -135,7 +135,7 @@
            </p>
          </li>
          <li>
-           <h4> Ajudante de Assistência de Direção</h4>
+           <h4><b>Ajudante de Assistência de Direção</b></h4>
            <h5><small>Longa-metragem Malês</small></h5>
            <p class="subparagrafo">
               Colaborou na assistência de direção por vinte dias, 
@@ -143,7 +143,7 @@
             </p>
         </li>
         <li>
-          <h4>Nihon Subaru</h4>
+          <h4><b>Nihon Subaru</b></h4>
           <a href="https://www.nihonespecializadasubaru.com" target="_blank"><small>Consultora - 2016 á 2022</small></a> 
           <p class="subparagrafo"> 
             Atuou por seis anos, entre 2016 e 2022, onde geriu a comunicação com clientes e fornecedores. 
@@ -155,11 +155,11 @@
      </section>
     </div>
    <section id="meusprojetos">
-     <h3> Meus Projetos</h3> 
+     <h3> <b>Meus Projetos</b></h3> 
 
      <ul> 
        <li> 
-         <h4>Calculadora</h4> 
+         <h4><b>Calculadora</b></h4> 
          <small>Projeto em Java Script</small><br /> <!--osmall não se comporta como link, ele pega o texto do conteúdo, precisa de br, não se comporta em bloco-->
          <a href="https://pretalab.com" target="_blank">
           Link para o projeto 
@@ -171,7 +171,7 @@
           </p>
         </li>    
         <li>
-         <h4>Projeto página e-commerce</h4> 
+         <h4><b>Projeto página e-commerce</b></h4> 
          <small>Projeto em HTML e CSS</small><br /> <!--osmall não se comporta como link, ele pega o texto do conteúdo, precisa de br, não se comporta em bloco-->
          <a href="https://pretalab.com" target="_blank">
           Link para o projeto 
