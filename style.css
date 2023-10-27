@@ -1,4 +1,4 @@
-*{ /*seletor universal*/
+*{ /*seletor universal-atualizade*/
  margin: 0;
  padding: 0;
 }
@@ -20,6 +20,15 @@ header {
     align-items: center;
 
     color: #ffffff;
+    
+}
+header:hover {
+    background-color: #be79cd; 
+
+    transition: 0.5s;
+    
+    opacity: 0.7
+
 }
 
 #menuNavegacao {
@@ -41,11 +50,7 @@ ul, ol{
 }
 #menuNavegacao li a:hover {
   border-bottom:2px solid #be79cd; 
-  background-color: #be79cd; 
-
-    transition: 0.5s;
     
-    opacity: 0.7;  
 }
 
 main {
